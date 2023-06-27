@@ -48,6 +48,13 @@ a {
   margin: 0 auto;
 }
 
+.content {
+  /* グレーの線 */
+  border-bottom: 3px solid grey;
+  /* パディング */
+  padding: 30px;
+}
+
 /*===========================
 header
 =============================*/
@@ -56,18 +63,172 @@ header
   background: #ce5230;
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  padding-top: 20px;
   align-items: center;
+  /* main作った後にposition:fixed */
 }
 
+.header-left {
+  padding-left: 20px;
+}
 .header-left-title {
   font-family: "Comic Sans MS";
+  font-size: 24px;
+  font-weight: 500;
 }
 
+.header-right {
+  padding-right: 20px;
+}
 .header-nav-items {
   display: flex;
   /* flexの時はgap使える、flex時のみ */
   gap: 20px;
+}
+
+/*===========================
+main
+=============================*/
+.about-me,
+.main-introduction,
+.main-career {
+  background: #dad2c4;
+}
+
+/*===========================
+main-image
+=============================*/
+.main-top {
+  background: #ce5230;
+  text-align: center;
+}
+
+.main-img {
+  padding-top: 30px;
+  width: 400px;
+  height: auto;
+}
+
+.main-top p {
+  color: #fff;
+}
+
+/*===========================
+about-me
+=============================*/
+.about-me {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-me-left {
+  width: 500px;
+  height: auto;
+}
+
+.about-me-right h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.profile {
+  margin: 0 auto;
+  width: 70%;
+  background: #ce5230;
+  border: 3px solid grey;
+  color: #fff;
+  padding: 30px;
+  line-height: 2;
+}
+
+.profile th {
+  text-align: left;
+  width: 120px;
+}
+
+/*===========================
+introduction
+=============================*/
+.main-introduction {
+  display: flex;
+  padding: 50px;
+}
+
+.main-introduction-child {
+  width: 33%;
+  padding: 20px;
+  text-align: center;
+}
+
+.main-introduction h3 {
+  text-align: center;
+  color: #ce5230;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.main-introduction img {
+  width: 300px;
+  height: auto;
+}
+
+.main-introduction p {
+  text-align: left;
+}
+/*===========================
+career
+=============================*/
+.main-career {
+  display: flex;
+}
+
+/* バックグラウンドの基本セット、背景画像CSS */
+.timeline {
+  background-size: 650px 650px;
+  width: 650px;
+  height: 650px;
+  background-image: url(../img/time-tree.e774d4e.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+.timeline p {
+  position: absolute;
+  width: 100px;
+  left: 50%;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.high-school {
+  top: 58px;
+  margin-left: -175px;
+  color: #fd5e6f;
+}
+
+.university {
+  top: 200px;
+  margin-left: 100px;
+  color: #08a68e;
+}
+
+.communication {
+  top: 350px;
+  margin-left: -175px;
+  color: #93b7c8;
+}
+
+.skill {
+  top: 505px;
+  margin-left: 100px;
+  color: #285b6d;
+}
+
+.main-career-image img {
+  width: 300px;
+  height: 300px;
 }
 
 /*===========================
