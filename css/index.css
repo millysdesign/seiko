@@ -153,25 +153,24 @@ introduction
 .main-introduction {
   display: flex;
   padding: 50px;
-  
 }
 
 .main-introduction-child {
   width: 33%;
   padding: 20px;
+  text-align: center;
 }
-.main-introduction h3{
+
+.main-introduction h3 {
   text-align: center;
   color: #ce5230;
   font-size: 50px;
   font-weight: 700;
-
 }
 
 .main-introduction img {
   width: 300px;
   height: auto;
-  text-align: center;
 }
 
 .main-introduction p {
@@ -213,7 +212,6 @@ career
   top: 200px;
   margin-left: 100px;
   color: #08a68e;
-  
 }
 
 .communication {
@@ -226,14 +224,12 @@ career
   top: 505px;
   margin-left: 100px;
   color: #285b6d;
-  
 }
 
 .main-career-image img {
   width: 300px;
   height: 300px;
 }
-
 
 /*===========================
 footer
