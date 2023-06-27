@@ -48,6 +48,11 @@ a {
   margin: 0 auto;
 }
 
+.content {
+  /* グレーの線 */
+  /* パディング */
+}
+
 /*===========================
 header
 =============================*/
@@ -56,19 +61,66 @@ header
   background: #ce5230;
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  padding-top: 20px;
   align-items: center;
+  /* main作った後にposition:fixed */
 }
 
+.header-left {
+  padding-left: 20px;
+}
 .header-left-title {
   font-family: "Comic Sans MS";
+  font-size: 16px;
+  font-weight: 500;
 }
 
+.header-right {
+  padding-right: 20px;
+}
 .header-nav-items {
   display: flex;
   /* flexの時はgap使える、flex時のみ */
   gap: 20px;
 }
+
+/*===========================
+main
+=============================*/
+.main {
+  background: #ce5230;
+  
+}
+
+/*===========================
+main-image
+=============================*/
+.main-img {
+  padding-top: 30px;
+  width: 70%;
+  height: auto;
+}
+
+.main-image p{
+  text-align: center;
+  color: #fff;
+}
+/*===========================
+about-me
+=============================*/
+.about-me-left {
+  padding: 50px;
+  width: 400px;
+  height: 400px;
+}
+
+/*===========================
+introduction
+=============================*/
+
+/*===========================
+career
+=============================*/
 
 /*===========================
 footer
