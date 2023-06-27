@@ -153,6 +153,7 @@ introduction
 .main-introduction {
   display: flex;
   padding: 50px;
+  
 }
 
 .main-introduction-child {
@@ -170,6 +171,7 @@ introduction
 .main-introduction img {
   width: 300px;
   height: auto;
+  text-align: center;
 }
 
 .main-introduction p {
@@ -197,38 +199,34 @@ career
   position: absolute;
   width: 100px;
   left: 50%;
+  font-size: 12px;
+  font-weight: 700;
 }
 
 .high-school {
   top: 58px;
   margin-left: -175px;
   color: #fd5e6f;
-  font-size: 12px;
-  font-weight: 700;
 }
 
 .university {
   top: 200px;
   margin-left: 100px;
   color: #08a68e;
-  font-size: 12px;
-  font-weight: 700;
+  
 }
 
 .communication {
   top: 350px;
   margin-left: -175px;
   color: #93b7c8;
-  font-size: 12px;
-  font-weight: 700;
 }
 
 .skill {
   top: 505px;
   margin-left: 100px;
   color: #285b6d;
-  font-size: 12px;
-  font-weight: 700;
+  
 }
 
 .main-career-image img {
