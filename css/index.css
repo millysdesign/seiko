@@ -12,6 +12,8 @@ body {
 body {
   font-family: "Noto Sans JP", sans-serif;
   color: #2c3e50;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 img {
@@ -42,12 +44,6 @@ a {
   text-decoration: none;
 }
 
-.inner {
-  width: 1200px;
-  max-width: 100%;
-  margin: 0 auto;
-}
-
 .content {
   /* グレーの線 */
   border-bottom: 3px solid grey;
@@ -60,6 +56,7 @@ header
 =============================*/
 .header {
   color: #fff;
+  font-weight: 700;
   background: #ce5230;
   display: flex;
   justify-content: space-between;
@@ -74,7 +71,6 @@ header
 .header-left-title {
   font-family: "Comic Sans MS";
   font-size: 24px;
-  font-weight: 500;
 }
 
 .header-right {
@@ -111,6 +107,7 @@ main-image
 
 .main-top p {
   color: #fff;
+  font-size: 22px;
 }
 
 /*===========================
@@ -244,4 +241,150 @@ footer
 
 .footer-right {
   margin-right: 40px;
+}
+
+/*===========================
+レスポンシブ表示
+=============================*/
+@media screen and (max-width: 959px) {
+  body {
+    min-width: 380px;
+  }
+
+  h2 {
+    font-size: 32px;
+    font-weight: 400;
+    padding: 50px 20px;
+  }
+
+  /* header */
+  .header {
+    padding: 10px 0;
+    height: 50px;
+    width: 100%;
+    position: sticky;
+    text-align: center;
+    top: 0;
+    z-index: 1;
+  }
+
+  .header-left-title {
+    font-size: 16px;
+  }
+
+  /* main */
+  .main-top {
+    padding: 71px 50px 185px;
+  }
+  .main-top p {
+    font-size: 18px;
+  }
+
+  .main-img {
+    width: 70%;
+  }
+
+  /* about-me */
+
+  .about-me {
+    display: block;
+  }
+  .about-me-left {
+    width: 100%;
+    text-align: center;
+  }
+  .about-me-left img {
+    height: 400px;
+    padding: 30px;
+  }
+
+  .about-me-right h2 {
+    margin-bottom: 0;
+  }
+
+  .profile {
+    width: 100%;
+    color: #ce5230;
+    background: #dad2c5;
+    border: none;
+    padding: 0;
+    margin-bottom: 50px;
+  }
+
+  .profile th,
+  td {
+    font-weight: 500;
+  }
+
+  /* introduction */
+  .main-introduction {
+    display: block;
+  }
+
+  .main-introduction-child {
+    width: 100%;
+  }
+
+  .main-introduction-child h3 {
+    padding-bottom: 30px;
+  }
+  /* career */
+  .main-career {
+    display: block;
+  }
+
+  .main-career h2 {
+    padding: 0 20px;
+  }
+
+  .timeline {
+    background-size: 550px 550px;
+    width: 100%;
+    height: 550px;
+    /* 中央揃え */
+    margin: 0px auto;
+  }
+
+  .timeline p {
+    font-size: 10px;
+    font-weight: 500;
+  }
+  .high-school {
+    top: 50px;
+    margin-left: -150px;
+  }
+
+  .university {
+    top: 180px;
+    margin-left: 90px;
+  }
+
+  .communication {
+    top: 295px;
+    margin-left: -150px;
+  }
+
+  .skill {
+    top: 430px;
+    margin-left: 90px;
+  }
+
+  .main-career-image img{
+    width: 300px;
+    height: 300px;
+    margin: 40px;
+  }
+  /* footer */
+  .copyright{
+    font-size: 12px;
+  }
+
+  .footer-right a{
+    font-weight: 700;
+  }
+
+  .footer-left {
+    width: 60%;
+    padding-right: 20px;
+  }
 }
