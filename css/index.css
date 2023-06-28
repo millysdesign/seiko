@@ -302,7 +302,45 @@ footer
     margin-bottom: 50px;
   }
 
-  .profile th, td{
+  .profile th,
+  td {
     font-weight: 500;
   }
+
+  /* introduction */
+  .main-introduction {
+    display: block;
+  }
+
+  .main-introduction-child {
+    width: 100%;
+  }
+
+  .main-introduction-child h3 {
+    padding-bottom: 30px;
+  }
+  /* career */
+  .main-career {
+    display: block;
+  }
+
+  .main-career h2 {
+    padding: 20px 50px;
+  }
+
+  .timeline {
+    background-size: 500px 500px;
+    width: 500px;
+    height: 500px;
+    margin: 0px auto;
+  }
+
+  .high-school {
+  }
+  /* footer */
+  .footer {
+    display: block;
+  }
+
+  .
 }
